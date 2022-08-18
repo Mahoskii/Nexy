@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome Sir Nexy!</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<link
+    		rel="stylesheet"
+    		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  		/>
+
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<div class="container h-100">
+		<div class="row1">
+			<h1 class="animate__animated animate__tada">Welcome Dear Sir Nexy!</h1>
+		</div>
+		<div class="row2">
+			<h2 class="animate__animated animate__fadeInDown">What Day is it?</h2>
+		</div>
+		<div class="row3">
+			<button type="button" onclick="document.getElementById('today').innerHTML = day;" class="btn btn-primary btn-cng animate__animated animate__fadeInUp">Click Here to Find Out!</button>
+			
+		</div>
+		<div class="row4">
+			<h3 id="today" class="row3"></h3>
+		</div>
+	</div>
+	<script>
+		const days = ["It's Sunday! Better Wear Your Sunscreen!","It's Moneyday! Time to Make Some Cash","It's Chewsday! Innit Love?","It's Wednesday! My Dude","It's Thurstday! Better Stay Hydrated!","It's Fryday! Time for Some Oily Joy","It's Sat-ur-day! Good for Just Sitting and Chillin With Your Day"];
+		const d = new Date();
+		let day = days[d.getDay()];
+	</script>
+</body>
+</html>
